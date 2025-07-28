@@ -130,5 +130,36 @@ Find the length of string n.
 Loop from the last character (index n-1) down to the first (index 0).
 Print each character during the loop.
 End.
+Program 8
+Aim:
+To write a C++ program that checks whether a given string is a palindrome or not.
+Theory:
+A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward as forward. For example, "madam", "racecar", and "level" are palindromes.
+To check if a string is a palindrome, we compare the characters starting from the beginning and the end of the string, moving towards the center. 
+If all corresponding characters match, the string is a palindrome; otherwise, it is not.
+The process involves:
+Initializing two pointers or indices: one at the start of the string and one at the end.
+Comparing the characters at these pointers.
+If they are equal, move the pointers closer (start moves forward, end moves backward).
+If at any point, the characters do not match, the string is not a palindrome.
+If all pairs match, the string is a palindrome.
 
+Algorithm:
+Start the program.
+Read the input string from the user.
+Initialize two integer variables:
+start = 0 (start index of the string)
+end = length of the string - 1 (end index of the string)
+Initialize a boolean flag isPalindrome to true.
+While start is less than end:
+Compare characters at start and end.
+If characters are not equal:
+Set isPalindrome to false.
+Exit the loop.
+Increment start by 1.
+Decrement end by 1.
+After the loop ends:
+If isPalindrome is true, print "The string is a palindrome."
+Else, print "The string is not a palindrome."
+End the program.
 
