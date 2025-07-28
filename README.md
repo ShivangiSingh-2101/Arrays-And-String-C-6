@@ -48,4 +48,27 @@ After the loop:
 If found is true, print the target number and its position.
 Otherwise, print that the number was not found.
 End
+Program 3
+Aim
+To write a C++ program to calculate and display the sum and average of elements in a given integer array.
+
+Theory
+An array stores multiple elements of the same data type.
+The sum is the total of all elements added together.
+The average is the sum divided by the total number of elements.
+We iterate through the array to accumulate the sum of all elements.
+The average is calculated by dividing the sum by the array’s size.
+
+Algorithm
+
+Start
+Initialize an integer array with values.
+Calculate the size of the array.
+Initialize a variable sum to 0.
+Loop through the array:
+Add each element to sum.
+Calculate the average by dividing sum by the size of the array.
+Print the sum and average.
+End
+
 
