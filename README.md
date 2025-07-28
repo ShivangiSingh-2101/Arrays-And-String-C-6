@@ -71,4 +71,27 @@ Calculate the average by dividing sum by the size of the array.
 Print the sum and average.
 End
 
+Program 4
+Aim
+To write a C++ program to find and display the minimum and maximum elements in a given integer array.
+
+Theory
+Arrays are collections of elements stored sequentially.
+The minimum element is the smallest value in the array.
+\The maximum element is the largest value in the array.
+By initializing min and max to the first element, the program compares each subsequent element to update these values accordingly.
+Traversing the array once allows finding both minimum and maximum efficiently.
+
+Algorithm
+
+Start
+Initialize an integer array with elements.
+Calculate the size of the array.
+Set min and max to the first element of the array.
+Loop from the second element to the last element:
+If current element < min, update min.
+If current element > max, update max.
+After the loop, print the min and max values.
+End
+
 
