@@ -94,4 +94,19 @@ If current element > max, update max.
 After the loop, print the min and max values.
 End
 
+Program 6
+Aim
+To concatenate (join) two or more strings in C++ and produce a single combined string.
+
+Theory
+Concatenation means joining two strings end-to-end. In C++, strings can be handled mainly in two ways:
+Using C-style strings (character arrays, e.g., char str[])
+Using C++ std::string class
+
+Algorithm
+Start with two input strings s1 and s2.
+Use the + operator or .append() method to join s2 to s1.
+Store the result in a new string s3 (or overwrite s1).
+Return or display the concatenated string s3.
+End
 
