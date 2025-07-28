@@ -109,4 +109,26 @@ Use the + operator or .append() method to join s2 to s1.
 Store the result in a new string s3 (or overwrite s1).
 Return or display the concatenated string s3.
 End
+Program 7
+
+Aim
+To take a string as input and print its characters in reverse order.
+
+Theory
+A string is a sequence of characters. To reverse a string means to rearrange characters so that the last character becomes the first, the second last becomes second, and so on.
+In C++, strings can be handled as:
+C-style strings (char arrays)
+C++ std::string class
+Reversing can be done by:
+Iterating from the last character to the first and printing each character.
+Using built-in functions like std::reverse (in <algorithm>) for std::string.
+Manually swapping characters from start and end until the middle.
+ Algorithm
+Steps:
+Read input string s.
+Find the length of string n.
+Loop from the last character (index n-1) down to the first (index 0).
+Print each character during the loop.
+End.
+
 
