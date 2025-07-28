@@ -5,23 +5,23 @@
 using namespace std;
 
 int main() {
-    const int size = 5;   // size of the array
+    const int size = 5;   
     int arr[size];
     int sum = 0;
     float average;
 
-    // Input array elements from user
+    
     for (int i = 0; i < size; i++) {
         cout << "Enter element " << (i + 1) << ": ";
         cin >> arr[i];
     }
 
-    // Calculate sum
+   
     for (int i = 0; i < size; i++) {
         sum += arr[i];
     }
 
-    // Calculate average
+
     average = (float)sum / size;
 
     cout << "Sum of array elements: " << sum << endl;
