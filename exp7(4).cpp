@@ -6,8 +6,12 @@
 using namespace std;
 
 int main() {
-    int arr[] = {21, 18, 36, 32, 44};
-    int size = sizeof(arr) / sizeof(arr[0]);
+   const int size = 5;   
+    int arr[size];
+  for (int i = 0; i < size; i++) {
+        cout << "Enter element " << (i + 1) << ": ";
+        cin >> arr[i];
+    }
 
     int min = arr[0];
     int max = arr[0];
