@@ -13,13 +13,13 @@ Dividing these gives the number of elements in the array.
 
 Algorithm
 
-Start
-Declare an integer array and initialize it with values {21, 18, 36, 32, 44}.
-Calculate the number of elements in the array using size = sizeof(arr) / sizeof(arr[0]).
-Use a for loop from i = 0 to i < size.
-Inside the loop, print the element at index i.
-End the loop.
-End the program.
+- Start
+- Declare an integer array and initialize it with values {21, 18, 36, 32, 44}.
+- Calculate the number of elements in the array using size = sizeof(arr) / sizeof(arr[0]).
+- Use a for loop from i = 0 to i < size.
+- Inside the loop, print the element at index i.
+- End the loop.
+- End the program.
 
 Program 2
 Aim
@@ -33,21 +33,21 @@ If the element is not found after checking all elements, the search terminates w
 
 Algorithm
 
-Start
-Initialize an integer array with given elements.
-Calculate the size of the array.
-Take the number to be searched (target) as input from the user.
-Set a flag variable found to false and position to -1.
-Loop through the array from index 0 to size - 1.
-Compare the current element with the target.
-If they match:
-Set found to true.
-Store the current index in position.
-Break the loop.
-After the loop:
-If found is true, print the target number and its position.
-Otherwise, print that the number was not found.
-End
+- Start
+- Initialize an integer array with given elements.
+- Calculate the size of the array.
+- Take the number to be searched (target) as input from the user.
+- Set a flag variable found to false and position to -1.
+- Loop through the array from index 0 to size - 1.
+- Compare the current element with the target.
+- If they match:
+- Set found to true.
+- Store the current index in position.
+-  Break the loop.
+- After the loop:
+- If found is true, print the target number and its position.
+- Otherwise, print that the number was not found.
+- End
 Program 3
 Aim
 To write a C++ program to calculate and display the sum and average of elements in a given integer array.
@@ -61,15 +61,15 @@ The average is calculated by dividing the sum by the array’s size.
 
 Algorithm
 
-Start
-Initialize an integer array with values.
-Calculate the size of the array.
-Initialize a variable sum to 0.
-Loop through the array:
-Add each element to sum.
-Calculate the average by dividing sum by the size of the array.
-Print the sum and average.
-End
+- Start
+- Initialize an integer array with values.
+- Calculate the size of the array.
+- Initialize a variable sum to 0.
+- Loop through the array:
+- Add each element to sum.
+- Calculate the average by dividing sum by the size of the array.
+- Print the sum and average.
+- End
 
 Program 4
 Aim
@@ -84,15 +84,48 @@ Traversing the array once allows finding both minimum and maximum efficiently.
 
 Algorithm
 
-Start
-Initialize an integer array with elements.
-Calculate the size of the array.
-Set min and max to the first element of the array.
-Loop from the second element to the last element:
-If current element < min, update min.
-If current element > max, update max.
-After the loop, print the min and max values.
-End
+- Start
+- Initialize an integer array with elements.
+- Calculate the size of the array.
+- Set min and max to the first element of the array.
+- Loop from the second element to the last element:
+- If current element < min, update min.
+- If current element > max, update max.
+- After the loop, print the min and max values.
+- End
+
+
+
+Program 5
+Aim:
+To demonstrate various methods of taking string input in C++, including single word input with cin, line input with getline(), character-by-character input using cin.get(), input into a character array with cin.getline(), and how to safely mix cin and getline().
+
+Theory:
+In C++, strings can be input in multiple ways depending on the requirements:
+cin >> str reads input until the first whitespace, so it only captures one word.
+getline(cin, str) reads the entire line including spaces until a newline character is encountered.
+cin.get() reads input character-by-character, which is useful for processing input one character at a time.
+cin.getline(charArray, size) reads a line of text into a character array, useful when using C-style strings.
+Mixing cin and getline() can cause issues because cin leaves the newline character in the input buffer, which getline() may read as an empty line. This can be fixed by using cin.ignore() to discard leftover characters.
+Understanding these methods is important for correctly handling user input in different scenarios.
+
+Algorithm:
+- Prompt user to enter a single word.
+- Use cin >> to read the word and display it.
+- Clear the input buffer using cin.ignore() to prepare for line input.
+- Prompt user to enter a full line.
+- Use getline(cin, string) to read the full line and display it.
+- Prompt user to enter characters one-by-one.
+- Use a loop with cin.get() to read characters until newline is encountered, printing each character.
+- Prompt user to enter a line into a character array.
+- Use cin.getline(charArray, size) to read the line and display it.
+- Prompt user to enter an integer.
+- Use cin to read the integer.
+- Use cin.ignore() to discard leftover newline.
+- Prompt user to enter a full name.
+- Use getline(cin, string) to read the full name and display the age and name.
+- End.
+
 
 Program 6
 Aim
@@ -104,11 +137,11 @@ Using C-style strings (character arrays, e.g., char str[])
 Using C++ std::string class
 
 Algorithm
-Start with two input strings s1 and s2.
-Use the + operator or .append() method to join s2 to s1.
-Store the result in a new string s3 (or overwrite s1).
-Return or display the concatenated string s3.
-End
+- Start with two input strings s1 and s2.
+- Use the + operator or .append() method to join s2 to s1.
+- Store the result in a new string s3 (or overwrite s1).
+- Return or display the concatenated string s3.
+- End
 Program 7
 
 Aim
@@ -125,11 +158,13 @@ Using built-in functions like std::reverse (in <algorithm>) for std::string.
 Manually swapping characters from start and end until the middle.
  Algorithm
 Steps:
-Read input string s.
-Find the length of string n.
-Loop from the last character (index n-1) down to the first (index 0).
-Print each character during the loop.
-End.
+- Read input string s.
+- Find the length of string n.
+- Loop from the last character (index n-1) down to the first (index 0).
+- Print each character during the loop.
+- End.
+
+
 Program 8
 Aim:
 To write a C++ program that checks whether a given string is a palindrome or not.
@@ -145,21 +180,21 @@ If at any point, the characters do not match, the string is not a palindrome.
 If all pairs match, the string is a palindrome.
 
 Algorithm:
-Start the program.
-Read the input string from the user.
-Initialize two integer variables:
-start = 0 (start index of the string)
-end = length of the string - 1 (end index of the string)
-Initialize a boolean flag isPalindrome to true.
-While start is less than end:
-Compare characters at start and end.
-If characters are not equal:
-Set isPalindrome to false.
-Exit the loop.
-Increment start by 1.
-Decrement end by 1.
-After the loop ends:
-If isPalindrome is true, print "The string is a palindrome."
-Else, print "The string is not a palindrome."
-End the program.
+- Start the program.
+- Read the input string from the user.
+- Initialize two integer variables:
+- start = 0 (start index of the string)
+- end = length of the string - 1 (end index of the string)
+- Initialize a boolean flag isPalindrome to true.
+- While start is less than end:
+- Compare characters at start and end.
+- If characters are not equal:
+- Set isPalindrome to false.
+- Exit the loop.
+- Increment start by 1.
+- Decrement end by 1.
+- After the loop ends:
+- If isPalindrome is true, print "The string is a palindrome."
+- Else, print "The string is not a palindrome."
+- End the program.
 
