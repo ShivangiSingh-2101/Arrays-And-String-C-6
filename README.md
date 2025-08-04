@@ -142,8 +142,9 @@ Algorithm
 - Store the result in a new string s3 (or overwrite s1).
 - Return or display the concatenated string s3.
 - End
-Program 7
 
+
+Program 7
 Aim
 To take a string as input and print its characters in reverse order.
 
@@ -163,6 +164,7 @@ Steps:
 - Loop from the last character (index n-1) down to the first (index 0).
 - Print each character during the loop.
 - End.
+
 
 
 Program 8
